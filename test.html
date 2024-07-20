@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>NMP v.1.0-alpha</title>
+	
+	<style>
+		.custom-label {
+			font-family: Roboto;
+			font-size: 10pt;
+		}
+	</style>
+  </head>
+  <body>
+	<div class='container'>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Navbar</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+			  <li class="nav-item active">
+				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Features</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Pricing</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link disabled" href="#">Disabled</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+	</div>
+	<div class='container'>
+		<div class='row'>
+				<div class='card'>
+					<div class='card-body'>
+						<form>
+							<div class='form-group'>
+								<label for='clientType'>Şirkət və ya F/Ş</label>
+								<select class='form-control' id='clientType'>
+									<option>Şirkət</option>
+									<option>Fiziki şəxs</option>
+								</select>
+							</div>
+							<div class='form-group'>
+								<label for='input1' id='privateOrCompany'>Şirkətin adı</label>
+								<input type='text' class='form-control' id='company' aria-describedby='inputHelp' placeholder='Şirkət' required>
+								<small id='inputHelp' class='form-text text-muted'>m.ü. Azintex.com MMC</small>
+							</div>
+							<div class='form-group'>
+								<label for='input1'>Əlaqəli şəxs</label>
+								<input type='text' pattern="[A-ƏZ][a-əz]*\s[A-ƏZ][a-əz]*\s[A-ƏZ][a-əz]*\s(oğlu|qızı)$" title="Ad soyad və ata adı tam olaraq qeyd edin" class='form-control' id='person' aria-describedby='inputHelp' placeholder='Ad, soyad, ata adı' required>
+								<small id='inputHelp' class='form-text text-muted'>m.ü. Elşad Əliyev Sabir oğlu, Yeganə Hüseynova Rəşid qızı</small>
+							</div>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<!-- <span class="input-group-text" id="">First and last name</span> -->
+									<select class='form-control'>
+										<option>(050)</option>
+										<option>(051)</option>
+										<option>(055)</option>
+									</select>
+								</div>
+									<input type="tel" pattern="\d{3}\-\d{2}\-\d{2}" title="Number must contain 7 digits" id='telephone' class="form-control" placeholder='XXX-YY-ZZ' required>
+							</div>
+							<br>
+							<div class='form-group'>
+									<label for='testInput' class='custom-label'>Test input</label>
+									<input id='testInput' type='text' class='form-control' placeholder='Test input'>
+							</div>
+							<br>
+							<div class='input-group'>
+								<!-- <label for='selectLocation'>Ünvan</label> -->
+								<div class='input-group-prepend'>
+									<select class='form-control' id='selectLocation' required>
+										<option>Avenue Veraj</option>
+										<option>WBC</option>
+										<option>Qobustan Plaza</option>
+										<option>Qlobus Plaza</option>
+										<option>Aygun City</option>
+									</select>
+								</div>
+									<input type='number' class='form-control' id='floor' aria-describedby='inputHelp' placeholder='Mərtəbə'>
+									<input type='number' class='form-control' id='room' aria-describedby='inputHelp' placeholder='Otaq'>
+							</div>
+							<br>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+					<!-- <div class='card-footer'>Card footer</div> -->
+				</div>
+				
+				<div class='row'>
+					<ul class='list-group'>
+						<li class='list-group-item'><b>Username</b> : ppp1000</li>
+						<li class='list-group-item'><b>Password</b> : abc1234</li>
+						<li class='list-group-item'>Phone</li>
+						<li class='list-group-item'>Address</li>
+						<li class='list-group-item'>Person</li>
+						<li class='list-group-item'>IP address</li>
+						<li class='list-group-item'>Rate</li>
+						<li class='list-group-item'>Connection date</li>
+						<li class='list-group-item'>Disconnection date</li>
+						<li class='list-group-item'>Status</li>
+					</ul>
+				</div>
+	</div>
+</div>
+<div class='row'>
+	<p class='mx-auto'>Hello</p>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script>
+		var isSelected = false;
+		document.getElementById('clientType').onclick = function(){
+			if(isSelected){
+				console.log(this.value);
+			}
+			isSelected = !isSelected;
+		}
+		
+		//document.getElementById('telephone').oninput = function(){
+			//console.log(this.value);
+		//}
+		console.log(document.getElementById('person').pattern);
+	</script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+[
+{"name": "id", "title": "ID", "breakpoints": "xs sm md", "type": "number"},
+{"name": "company", "title": "Company", "type": "text"},
+{"name": "address", "title": "Address", "breakpoints": "xs sm md", "type": "text"},
+{"name": "person", "title": "Person", "breakpoints": "xs sm md", "type": "text"},
+{"name": "phone", "title": "Phone", "breakpoints": "xs sm md", "type": "text"},
+{"name": "email", "title": "Email", "breakpoints": "xs sm md", "type": "text"},
+{"name": "rate", "title": "Rate", "breakpoints": "xs sm md", "type": "number"},
+{"name": "username", "title": "Username", "type": "text"},
+{"name": "password", "title": "Password", "breakpoints": "xs sm md", "type": "text"},
+{"name": "ip_address", "title": "IP address", "breakpoints": "xs sm md", "type": "text"},
+{"name": "start_date", "title": "Start date", "breakpoints": "xs sm md", "type": "date"},
+{"name": "stop_date", "title": "Stop date", "breakpoints": "xs sm md", "type": "date"},
+{"name": "state", "title": "State", "breakpoints": "xs sm md", "type": "number"}
+]

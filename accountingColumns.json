@@ -1,0 +1,7 @@
+[
+{"name": "radacctid", "title": "ID", "breakpoints": "xs sm md", "type": "number"},
+{"name": "username", "title": "Username", "type": "text"},
+{"name": "acctstarttime", "title": "Start time", "breakpoints": "xs sm md", "type": "date"},
+{"name": "acctstoptime", "title": "Stop time", "breakpoints": "xs sm md", "type": "date"},
+{"name": "acctterminatecause", "title": "Terminate cause", "breakpoints": "xs sm md", "type": "text"}
+]
