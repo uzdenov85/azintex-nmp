@@ -217,17 +217,6 @@ $app->post('/add_user', function() use($app,$db,$db_nmp){
 	$db_nmp->insert('clients',$nmp_data_clients);
 	$app->render('template.php', Array('param' => 'added_user','data' => $nmp_data_clients));
 });
-
-$app->get('/show_added', function() use($app){
-	session_start();
-	$data = ["company" => "Azitex", "address" => "Avenue Veraj", "person" => "Uzdenov Haji", 
-			"phone" => "0504499126", "email" => "h.uzdenov@azintex.com", "rate" => "100", 
-			"username" => "ppp2054", "password" => "BH78NBD", "ip_address" => "85.132.63.188",
-			"start_date" => "2021-09-30", "1"];
-	$app->render('template.php', Array('param' => 'added_user', 'data' => $data));
-});
-
-
 /* API */
 
 
